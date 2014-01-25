@@ -1,7 +1,7 @@
 KeygenMe
 ========
 
-his is an KeygenMe I wrote a while back for a number of reverse engineering community's I frequent. It's designed to be more educative than it is challenging, I wanted to demonstrate some common protection techniques used by executable protectors such as ASProtect and Enigma, alongside showing how a more complex license key system would work. For this reason, strings are not encrypted and the KeygenMe has been made intentionally verbose for ease of debugging and understanding.
+This is an KeygenMe I wrote a while back for a number of reverse engineering community's I frequent. It's designed to be more educative than it is challenging, I wanted to demonstrate some common protection techniques used by executable protectors such as ASProtect and Enigma, alongside showing how a more complex license key system would work. For this reason, strings are not encrypted and the KeygenMe has been made intentionally verbose for ease of debugging and understanding.
 
 So what protection does this thing employ?
 1. Uses a Memory CRC check to verify internal routines have not been tampered with or ridden with breakpoints
@@ -21,11 +21,11 @@ There's quite a bit more to the registration system, I suggest taking a look thr
 
 Here's what happens if you try and set a breakpoint within registration routine, which can normally occur after doing a simple string search for anything matching "Registration successful", which is often the first method of attack for newer reverse engineer's. 
 
----------
+
 Name: KOrUPt
 Key: VT39-37NQ-ZW3J-4WKZ-24UF-X92K-BRNA-DHF6-2RRR-7VWU-G1NH-TBF8-GVP1
 Signature: ...
----------
+
 
 DetectHwBreakpoints()
 ScanForSwBreakpoints()
@@ -42,11 +42,11 @@ Attempting to register application with given key file
 
 P:\Development\KeygenMe>KeygenMe.exe
 
----------
+
 Name: KOrUPt
 Key: VT39-37NQ-ZW3J-4WKZ-24UF-X92K-BRNA-DHF6-2RRR-7VWU-G1NH-TBF8-GVP1
 Signature: ...
----------
+
 
 DetectHwBreakpoints()
 ScanForSwBreakpoints()
