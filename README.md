@@ -12,6 +12,7 @@ So what protection does this thing employ?
 6. Calls to the registration routine(s) are obfuscated with junk code
 
 Okay, what about the license system?
+
 1. Uses MD5, AES to hash and encrypt/decrypt
 2. Uses RSA to sign and verify keys
 3. All keys are tied to hardware ID's
