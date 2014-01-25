@@ -38,8 +38,10 @@ CheckKeyFormat()
 >> Key format valid!
 ```
 Running the application as intended with a valid key produces the following output:
-Attempting to register application with given key file
+
 ```
+# Attempting to register application with given key file
+
 P:\Development\KeygenMe>KeygenMe.exe
 
 
@@ -75,6 +77,9 @@ Press any key to continue . . .
 ```
 
 The repo contains several files, compiled executable's alongside the source code files and others such as:
+
 1. GenerateKey.bat - A simple batch file which runs the Keygen and generates a key file for the KeygenMe
+
 2. RegisterApplication.bat - Another batch file that runs the KeygenMe and pauses so the output can be read
+
 3. Licence.key, public.key, private.key - This is the key file itself and the public/private RSA key pair used to sign and verify license keys
