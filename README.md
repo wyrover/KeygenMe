@@ -21,7 +21,7 @@ There's quite a bit more to the registration system, I suggest taking a look thr
 
 Here's what happens if you try and set a breakpoint within registration routine, which can normally occur after doing a simple string search for anything matching "Registration successful", which is often the first method of attack for newer reverse engineer's. 
 
-
+```
 Name: KOrUPt
 Key: VT39-37NQ-ZW3J-4WKZ-24UF-X92K-BRNA-DHF6-2RRR-7VWU-G1NH-TBF8-GVP1
 Signature: ...
@@ -36,10 +36,10 @@ CRC32_Generate_CRC()
 >> Memory corrupt!
 CheckKeyFormat()
 >> Key format valid!
-
+```
 Running the application as intended with a valid key produces the following output:
 Attempting to register application with given key file
-
+```
 P:\Development\KeygenMe>KeygenMe.exe
 
 
@@ -72,7 +72,7 @@ VerifyLicenseKey()
 
 P:\Development\KeygenMe>pause
 Press any key to continue . . .
-
+```
 
 The repo contains several files, compiled executable's alongside the source code files and others such as:
 1. GenerateKey.bat - A simple batch file which runs the Keygen and generates a key file for the KeygenMe
